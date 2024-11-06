@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Animado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .fade-in.appear {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        .skill-bar {
+            width: 0;
+            transition: width 1s ease-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-black to-purple-900 text-white">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <ul class="flex justify-center space-x-6 p-4">
+            <li><button class="text-lg font-semibold" data-section="home"><i class="fas fa-home mr-1"></i>Home</button></li>
+            <li><button class="text-lg font-semibold" data-section="about"><i class="fas fa-user mr-1"></i>About</button></li>
+            <li><button class="text-lg font-semibold" data-section="skills"><i class="fas fa-code mr-1"></i>Skills</button></li>
+            <li><button class="text-lg font-semibold" data-section="projects"><i class="fas fa-briefcase mr-1"></i>Projects</button></li>
+            <li><button class="text-lg font-semibold" data-section="experience"><i class="fas fa-briefcase mr-1"></i>Experience</button></li>
+            <li><button class="text-lg font-semibold" data-section="contact"><i class="fas fa-paper-plane mr-1"></i>Contact</button></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" class="pt-24 px-8">
+        <section id="home" class="text-center min-h-screen flex flex-col justify-center">
+            <h1 class="text-6xl font-bold mb-4 fade-in">Bienvenido a mi Portfolio</h1>
+            <p class="text-xl mb-8 fade-in">Desarrollador Web Creativo & Innovador</p>
+            <div class="flex justify-center space-x-4 fade-in">
+                <button class="bg-purple-600 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105" onclick="setActiveSection('projects')">Ver Proyectos</button>
+                <button class="bg-transparent border-2 border-purple-600 text-white px-6 py-3 rounded-full font-semibold transition-all hover:scale-105" onclick="setActiveSection('contact')">Contactar</button>
+            </div>
+        </section>
+
+        <section id="about" class="hidden max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 fade-in">Sobre mí</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="fade-in">
+                    <p class="text-lg mb-4">
+                        Soy un joven entusiasta y autodidacta en el campo del desarrollo web, con sólidos conocimientos en tecnologías
+                        como HTML, Git, Tailwind, JavaScript y Node.js. Aunque no tengo experiencia laboral formal
+                    </p>
+                    <p class="text-lg mb-4">
+                        Mi objetivo es combinar diseño intuitivo con funcionalidad potente para ofrecer soluciones que no solo cumplan, sino que superen las expectativas del cliente.
+                    </p>
+                </div>
+                <div class="bg-purple-800 p-6 rounded-lg transition-all hover:scale-105 fade-in">
+                    <h3 class="text-2xl font-bold mb-4">Datos Rápidos</h3>
+                    <ul class="list-disc list-inside">
+                        <li>3+ años de experiencia en desarrollo web</li>
+                        <li>Especializado en el diseño UX/UI y Node.js</li>
+                        <li>Amante del diseño responsivo y la accesibilidad</li>
+                        <li>Aprendiz constante de nuevas tecnologías</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="hidden max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 fade-in">Habilidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="skills-container">
+                <!-- Skills will be dynamically inserted here -->
+            </div>
+            
+        </section>
+
+        <section id="projects" class="hidden max-w-4xl mx-auto">
+            <h2 href="https://github.com/EzequielGonz?tab=stars" class="text-4xl font-bold mb-8 fade-in">Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-container">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="experience" class="hidden max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 fade-in">Experiencia Laboral</h2>
+            <div class="space-y-8" id="experience-container">
+                <!-- Experiences will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="contact" class="hidden max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 fade-in">Contáctame</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="fade-in">
+                    <p class="text-lg mb-4">
+                        ¿Tienes un proyecto en mente? ¡Hablemos! Estoy siempre abierto a nuevas oportunidades y colaboraciones.
+                    </p>
+                    <div class="flex space-x-6 mb-8">
+                        <a href="https://github.com/EzequielGonz/company-page.io" class="transition-all hover:scale-120 hover:rotate-360"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="#" class="transition-all hover:scale-120 hover:rotate-360"><i class="fas fa-envelope fa-2x"></i></a><p>ezegonza724@gmail.com</p>
+                    </div>
+                
+                <!-- <form class="space-y-4 fade-in">
+                    <input type="text" placeholder="Nombre" class="w-full p-2 bg-purple-800 rounded">
+                    <input type="email" placeholder="Email" class="w-full p-2 bg-purple-800 rounded">
+                    <textarea placeholder="Mensaje" rows="4" class="w-full p-2 bg-purple-800 rounded"></textarea>
+                    <button type="submit" class="w-full bg-purple-600 text-white px-6 py-3 rounded font-semibold transition-all hover:scale-105">Enviar Mensaje</button>
+                </form> -->
+            
+        </section>
+    </main>
+
+    <button id="scroll-to-top" class="fixed bottom-8 right-8 bg-purple-600 text-white p-3 rounded-full opacity-0 transition-all hover:scale-110" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
