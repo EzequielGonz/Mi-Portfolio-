@@ -10,9 +10,9 @@ const skills = [
 
 const projects = [
     { id: 1, title: 'Gemini-AI Page', description: 'Chatbot creado por mi utilizando la IA de Gemini creada por Google! <br><br><a href="https://zesty-griffin-a103d4.netlify.app/">Ver mas!</a>' },
-    { id: 2, title: 'Taskmanager con API de Pokemon', description: 'Una aplicación de gestión de tareas y sincronización en tiempo real.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver mas!</a>' },
+    { id: 2, title: 'Taskmanager con IA', description: 'Una aplicación de gestión de tareas y sincronización en tiempo real utilizando inteligencia artificial.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver mas!</a>' },
     { id: 3, title: 'Empresa FTC', description: 'Landing page, empresarial!<br><br><a href="https://github.com/EzequielGonz/empresa-ficticia">Ver mas!</a>' },
-    { id: 4, title: 'Restaurante Argentino(MiniProyecto)', description: 'Pagina para un restaurante argentino, no aparece su informacion por derechos reservados.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver mas!</a>' },
+    { id: 4, title: 'App de seguimiento de salud y fitness', description: 'Una innovadora aplicación de seguimiento de salud y fitness que permite a los usuarios monitorear su actividad física, establecer metas personalizadas y recibir recomendaciones para llevar un estilo de vida más saludable.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver mas!</a>' },
     { id: 5, title: 'Una pagina para una empresa local', description:'Una pagina que utiliza EmailJS, con animaciones modernas y actuales con un gran diseño.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver mas!</a>'}
 ];
 
