@@ -9,12 +9,38 @@ const skills = [
 ];
 
 const projects = [
-    { id: 1, title: 'Gemini-AI Page', description: 'Chatbot creado por mi utilizando la IA de Gemini creada por Google! <br><br><a href="https://zesty-griffin-a103d4.netlify.app/">Ver mas!</a>' },
-    { id: 2, title: 'Taskmanager con IA', description: 'Una aplicación de gestión de tareas y sincronización en tiempo real utilizando inteligencia artificial.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver mas!</a>' },
-    { id: 3, title: 'Empresa FTC', description: 'Landing page, empresarial!<br><br><a href="https://github.com/EzequielGonz/empresa-ficticia">Ver mas!</a>' },
-    // { id: 4, title: 'App de seguimiento de salud y fitness', description: 'Una innovadora aplicación de seguimiento de salud y fitness que permite a los usuarios monitorear su actividad física, establecer metas personalizadas y recibir recomendaciones para llevar un estilo de vida más saludable.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver mas!</a>' },
-    { id: 5, title: 'Una pagina para una empresa local', description:'Una pagina que utiliza EmailJS, con animaciones modernas y actuales con un gran diseño.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver mas!</a>'}
+    {
+        id: 1,
+        title: 'Gemini-AI Page',
+        description: 'Chatbot creado por mí utilizando la IA de Gemini creada por Google! <br><br><a href="https://zesty-griffin-a103d4.netlify.app/">Ver más!</a>',
+        image: '../img/geminiaipreviewphoto.png',
+    },
+    {
+        id: 2,
+        title: 'Taskmanager con IA',
+        description: 'Una aplicación de gestión de tareas y sincronización en tiempo real utilizando inteligencia artificial.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver más!</a>',
+        image: '../img/aitaskmanager.png',
+    },
+    {
+        id: 3,
+        title: 'Empresa FTC',
+        description: 'Landing page empresarial!<br><br><a href="https://github.com/EzequielGonz/empresa-ficticia">Ver más!</a>',
+        image: '../img/empresaftc.png'    
+    },
+    // Si necesitas activar este proyecto, descomenta el siguiente bloque.
+    // {
+    //     id: 4,
+    //     title: 'App de seguimiento de salud y fitness',
+    //     description: 'Una innovadora aplicación de seguimiento de salud y fitness que permite a los usuarios monitorear su actividad física, establecer metas personalizadas y recibir recomendaciones para llevar un estilo de vida más saludable.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver más!</a>',
+    // },
+    {
+        id: 5,
+        title: 'Una página para una empresa local',
+        description: 'Una página que utiliza EmailJS, con animaciones modernas y actuales con un gran diseño.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver más!</a>',
+        image: '../img/cd978269-ac22-47a4-a9f1-84da02feaf34.jpg'
+    },
 ];
+
 
 const experiences = [
     { id: 1, role: 'Actualmente no tengo experiencia laboral' },
@@ -86,13 +112,13 @@ function animateSkillBars() {
 
 function populateProjects() {
     const container = document.getElementById('projects-container');
-    projects.forEach((project, index) => {
+    projects.forEach((project) => {
         const projectElement = document.createElement('div');
         projectElement.className = 'bg-purple-800 p-6 rounded-lg transition-all hover:scale-105 fade-in';
         projectElement.innerHTML = `
+            <img src="${project.image}" alt="${project.title}" class="w-full h-48 object-cover rounded-t-lg"> <!-- Imagen del proyecto -->
             <h3 class="text-2xl font-bold mb-2">${project.title}</h3>
             <p>${project.description}</p>
-           
         `;
         container.appendChild(projectElement);
     });
@@ -142,3 +168,4 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => setActiveSection(button.dataset.section));
     }
 });
+
