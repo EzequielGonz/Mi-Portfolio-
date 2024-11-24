@@ -24,7 +24,7 @@ const projects = [
     {
         id: 3,
         title: 'Empresa FTC',
-        description: 'Landing page empresarial!<br><br><a href="https://github.com/EzequielGonz/empresa-ficticia">Ver más!</a>',
+        description: 'Landing page para una empresa. Utiliza animaciones modernas y una buena optimizacion!<br><br><a href="https://github.com/EzequielGonz/empresa-ficticia">Ver más!</a>',
         image: 'https://i.ibb.co/Wkz8P6D/empresaftc.png'    
     },
     // Si necesitas activar este proyecto, descomenta el siguiente bloque.
