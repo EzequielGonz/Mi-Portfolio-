@@ -13,19 +13,19 @@ const projects = [
         id: 1,
         title: 'Gemini-AI Page',
         description: 'Chatbot creado por mí utilizando la IA de Gemini creada por Google! <br><br><a href="https://zesty-griffin-a103d4.netlify.app/">Ver más!</a>',
-        image: '../img/geminiaipreviewphoto.png',
+        image: 'https://ibb.co/55c45Xj'
     },
     {
         id: 2,
         title: 'Taskmanager con IA',
         description: 'Una aplicación de gestión de tareas y sincronización en tiempo real utilizando inteligencia artificial.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver más!</a>',
-        image: '../img/aitaskmanager.png',
+        image: 'https://ibb.co/NjKvJXq',
     },
     {
         id: 3,
         title: 'Empresa FTC',
         description: 'Landing page empresarial!<br><br><a href="https://github.com/EzequielGonz/empresa-ficticia">Ver más!</a>',
-        image: '../img/empresaftc.png'    
+        image: 'https://ibb.co/5rjpn6Y'    
     },
     // Si necesitas activar este proyecto, descomenta el siguiente bloque.
     // {
@@ -37,7 +37,7 @@ const projects = [
         id: 5,
         title: 'Una página para una empresa local',
         description: 'Una página que utiliza EmailJS, con animaciones modernas y actuales con un gran diseño.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver más!</a>',
-        image: '../img/cd978269-ac22-47a4-a9f1-84da02feaf34.jpg'
+        image: 'https://ibb.co/7Gjkhhr'
     },
 ];
 
