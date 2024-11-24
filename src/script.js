@@ -18,13 +18,13 @@ const projects = [
     {
         id: 2,
         title: 'Taskmanager con IA',
-        description: 'Una aplicación de gestión de tareas y sincronización en tiempo real utilizando inteligencia artificial.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver más!</a>',
+        description: 'Una aplicación de gestión de tareas y sincronización en tiempo real utilizando inteligencia artificial.<br><br><a href="https://managertaskai.vercel.app/">Ver más!</a>',
         image: 'https://i.ibb.co/8j8sjnx/aitaskmanager.png',
     },
     {
         id: 3,
         title: 'Empresa FTC',
-        description: 'Landing page para una empresa. Utiliza animaciones modernas y una buena optimizacion!<br><br><a href="https://github.com/EzequielGonz/empresa-ficticia">Ver más!</a>',
+        description: 'Landing page para una empresa. Utiliza animaciones modernas y una buena optimizacion!<br><br><a href="https://empresa-ficticia.vercel.app/">Ver más!</a>',
         image: 'https://i.ibb.co/Wkz8P6D/empresaftc.png'    
     },
     // Si necesitas activar este proyecto, descomenta el siguiente bloque.
@@ -36,7 +36,7 @@ const projects = [
     {
         id: 5,
         title: 'Una página para una empresa local',
-        description: 'Una página que utiliza EmailJS, con animaciones modernas y actuales con un gran diseño.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver más!</a>',
+        description: 'Una página que utiliza EmailJS, con animaciones modernas y actuales con un gran diseño.<br><br><a href="https://github.com/EzequielGonz/company-page.io">Ver más!</a>',
         image: 'https://i.ibb.co/jMDNQdY/cd978269-ac22-47a4-a9f1-84da02feaf34.jpg'
     },
 ];
