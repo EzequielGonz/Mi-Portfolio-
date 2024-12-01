@@ -35,8 +35,8 @@ const projects = [
     // },
     {
         id: 5,
-        title: 'Una página para una empresa local',
-        description: 'Una página que utiliza EmailJS, con animaciones modernas y actuales con un gran diseño.<br><br><a href="https://github.com/EzequielGonz/company-page.io">Ver más!</a>',
+        title: 'Pagina para eempresa de Buenos Aires',
+        description: 'Esta pagina esta hecha con React utilizando animaciones modernas y un diseño intuitivo<br><br><a href="https://smsagenciadigital.netlify.app/">Ver más!</a>',
         image: 'https://i.ibb.co/jMDNQdY/cd978269-ac22-47a4-a9f1-84da02feaf34.jpg'
     },
 ];
