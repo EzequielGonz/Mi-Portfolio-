@@ -27,12 +27,6 @@ const projects = [
         description: 'Landing page para una empresa. Utiliza animaciones modernas y una buena optimizacion!<br><br><a href="https://empresa-ficticia.vercel.app/">Ver más!</a>',
         image: 'https://i.ibb.co/Wkz8P6D/empresaftc.png'    
     },
-    // Si necesitas activar este proyecto, descomenta el siguiente bloque.
-    // {
-    //     id: 4,
-    //     title: 'App de seguimiento de salud y fitness',
-    //     description: 'Una innovadora aplicación de seguimiento de salud y fitness que permite a los usuarios monitorear su actividad física, establecer metas personalizadas y recibir recomendaciones para llevar un estilo de vida más saludable.<br><br><a href="https://github.com/stars/EzequielGonz/lists/proyectos">Ver más!</a>',
-    // },
     {
         id: 5,
         title: 'Pagina para empresa de Buenos Aires',
