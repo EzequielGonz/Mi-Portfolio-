@@ -37,7 +37,7 @@ const projects = [
         id: 5,
         title: 'Pagina para eempresa de Buenos Aires',
         description: 'Esta pagina esta hecha con React utilizando animaciones modernas y un diseño intuitivo<br><br><a href="https://smsagenciadigital.netlify.app/">Ver más!</a>',
-        image: 'https://i.ibb.co/jMDNQdY/cd978269-ac22-47a4-a9f1-84da02feaf34.jpg'
+        image: 'https://i.ibb.co/YPT1cfN/eze.jpg'
     },
 ];
 
